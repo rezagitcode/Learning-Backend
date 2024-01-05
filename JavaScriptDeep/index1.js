@@ -4,7 +4,7 @@
 //scope and lexical environment:
 
 // scope means the place where a function or a variable can be accessed
-// lexical environment is created wheneve an execution context is created
+// lexical(one inside another) environment is created wheneve an execution context is created
 // lexical environment of a function means local memory space plus reference of memory space 
 // of its parent
 // lexical environment of any function contains the reference to the lexical environment of 
