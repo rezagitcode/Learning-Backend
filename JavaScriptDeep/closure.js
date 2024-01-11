@@ -2,12 +2,15 @@ function x(){
     var a = 23;
     // y();
     function y(){
-        console.log(a);
+        var c = 56;
+        function d(){
+            console.log(a, c);
+        }
+        d();
     }
-    return y;
+    y();
 }
-var z = x();
-z();
+x();
 /*
-z gets closure (function y bundled togethere with its lexical scope).
+z gets closure (function y bundled together with its lexical scope).
 */

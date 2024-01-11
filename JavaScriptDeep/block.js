@@ -14,11 +14,17 @@ arrow function scopes are same as normal function scope.
 Shadowing occurs when a variable declared outside a block is also declared inside a block.
 Its value is replaced if initialized inside the block otherwise not.
 */
-var a = 100;
+const b = 100;
 {
-    var a;
-    let b = 2;
+    var a = 13;
+    const b = 2;
     let c = 3;
-    console.log(a);
+    console.log(b);
 }
-console.log(a);
+let checkThis = ()=> {
+    console.log(this);
+}
+let obj = {
+    checkThis: ()=>{console.log(this)}
+}
+console.log(b, checkThis(), obj.checkThis());
