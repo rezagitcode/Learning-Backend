@@ -43,7 +43,7 @@ Disadvantages of closures: Too much use of closures can create memory leaks beca
 not garbage collected.
 Garbage collectors: collects unused variables from memory and refreshes the memory 
 */
-// Example of garbage collection:
+/* Example of garbage collection:
 function a(){
     var b = 2;
     var c = 3;
@@ -53,3 +53,9 @@ function a(){
 }
 var j = a();
 j();
+Here c is not stored in memory because it is used.
+*/
+// But global variables are stored in memory.
+// var a = 9;
+// var b = 10;
+/* The ability to use functions as values is known as first class functions. */
