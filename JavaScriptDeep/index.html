@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parent {
+            border: black;
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+        }
+        .child {
+            border: black;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
     <h1>JavaScript Deep
     </h1>
     <button id="click">Click Me</button>
+    <div class="parent" id="parent">Time
+        <div class="child" contenteditable>Child 1</div>
+        <div class="child" contenteditable>Child 2</div>
+        <div class="child" contenteditable>Child 3</div>
+    </div>
 </body>
-<script src="./callBackfunc.js"></script>
+<script src="./testing.js"></script>
+
 </html>

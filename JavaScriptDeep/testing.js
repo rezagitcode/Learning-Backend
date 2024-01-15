@@ -1,7 +1,8 @@
-const a = 8;
-function r(){
- const a = 9;
-    console.log(a);
+let a = 8;
+function b(c){
+    c(a);
 }
-r();
-console.log(a);
+b(c);
+function c(t){
+    console.log(t);
+}
