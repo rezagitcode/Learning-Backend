@@ -1,8 +1,3 @@
-let a = 8;
-function b(c){
-    c(a);
-}
-b(c);
-function c(t){
-    console.log(t);
-}
+console.log(window);
+console.log(window.document);
+console.log(document.children[0].children[1].children);
