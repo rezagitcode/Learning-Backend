@@ -13,4 +13,5 @@ function myFunc(){
 let time = "nothing";
 console.log(Object.prototype);
 All the above items has prototypes.
+Prototypes are the mechanisms by which JavaScript objects inherit features from one another.
 */
