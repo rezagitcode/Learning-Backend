@@ -19,7 +19,7 @@ code into AST(Abstract Syntax Tree)
            b) Compiler: First, compiles the original code into an optimised code. Then the 
            optimised code is executed. Here, code is very efficient.
            c) JIT(Just in Time compilation): Modern JavaScript engine uses both interpreter
-           and compiler. So, Js in JIT compiled language.
+           and compiler. So, Js is JIT compiled language.
 2. Compilation: AST moves to interpreter where it is converted into byte code which is ready
 for execution. At the same time the compiler tries to optimise the code as much as possible
 and converts the code into bytecode.
