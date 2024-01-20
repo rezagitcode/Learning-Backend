@@ -1,3 +1,39 @@
+let name1 = {
+    firstName:"Mahmud",
+    lastName:"Reza",
+}
+let name2 = {
+    firstName:"Faizan",
+    lastName:"Habib"
+}
+let printFullName = function(hometown, state){
+    console.log(`${this.firstName} ${this.lastName} from ${hometown}, ${state}`);
+}
+firstName = "Window";
+lastName = "Object";
+printFullName.call(window,"Browser","OS");
+printFullName.call(name1,"Bangalore","Karnataka");
+
+// function borrowing (using call method):
+printFullName.call(name2,"Shillong","Meghalaya");
+
+// now using apply method:
+printFullName.apply(name1,["Bangalore","Karnataka"]);
+
+//now using bind method:
+// let printMyName = printFullName.bind(name1,"Bangalore","Karnataka");
+printFullName.bind(name1,"Bangalore","Karnataka")();
+// console.log(printMyName);
+// printMyName();
+
+/*
+Note: call and apply method are used to directly call the method but bind method is used
+to return a copy of that method so that it can be invoked later.
+
+call method can have as much arguments as needed whereas apply method only takes two arguments,
+first one is the object which is pointed by this keyword and second one is an array.
+*/
+
 // let name1 = {
 //       firstName:"Mahmud",
 //       lastName:"Reza"

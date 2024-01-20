@@ -31,6 +31,9 @@ createOrder(cart).then(function(orderID){
     console.log(orderID);
     return orderID;
 })
+.catch(function(err){
+console.log(err.message);
+}) //returns a promise with data as orderID
 .then(function(orderID){
     return proceedToPayment(orderID);
 })
@@ -59,7 +62,7 @@ function createOrder(cart){
 }
 function proceedToPayment(orderID){
     return new Promise(function(resolve, reject){
-        if(false){
+        if(true){
             resolve(`Payment of Order No.:${orderID} is successful`);
         }
         else{
@@ -69,5 +72,5 @@ function proceedToPayment(orderID){
     });
 }
 function validCart(cart){
-    return true;
+    return false;
 }
