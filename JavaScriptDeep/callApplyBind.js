@@ -60,14 +60,3 @@ first one is the object which is pointed by this keyword and second one is an ar
 
   // let printName = printFullName.bind(name1,"Bangalore");
   // printName("Karnataka");
-  // //Polyfill for bind:
-  // Function.prototype.myBind = function(...args){
-  //  let params = args.slice(1);
-  //  args[0].func = this;
-  //  return function(...params2){
-  //   let params3 = [...params,...params2];
-  //   args[0].func(...params3);
-  //  }
-  // }
-  // let printName2 = printFullName.myBind(name1);
-  // printName2("Karnataka");
