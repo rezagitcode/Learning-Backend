@@ -1,0 +1,4 @@
+React uses build process because:
+-> It can not be directly executed by browser as JSX needs to be transformed into executable
+javaScript code.
+-> It can not be directly used in production before minifiying.
