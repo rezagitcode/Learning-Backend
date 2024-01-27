@@ -5,3 +5,10 @@ function sum(...args) {
     : `${args.length === 2 ? "Input must be of type number" : "Number of arguments must be two"}`;
 }
 console.log(sum(1,"4"));
+// write a function which takes only one string and returns the number of characters:
+
+function charCount(...args){
+return args.length === 1 && typeof (args[0]) === "string"?
+args[0].length:`${args.length === 1?"Input must be a string":"Number of arguments must be one"}`;
+}
+console.log(charCount("Iwant"));
