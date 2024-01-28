@@ -34,5 +34,5 @@ for(let char of args[0]){
 }
 return myObj;
 }
-const myCount = charCount("aaa bckeklf");
+const myCount = charCount("");
 console.log(myCount);
