@@ -23,3 +23,8 @@ Which code is better?
 /*
 Advise 1: Always try to find mathematical formulas to make solutions simpler
 */
+let arr1 = [1,2,3];
+let arr2 = ["s","lkjlk",5];
+let arr3 = [...arr1,...arr2];
+let myString = arr3.toString().replaceAll(",","");
+console.log(myString);

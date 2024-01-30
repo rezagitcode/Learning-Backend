@@ -2,8 +2,7 @@ const http = require("http");
 const server = http.createServer((req, res)=>{
     const url = req.url;
     const method = req.method;
-    if(url === "create-user" && method === "POST"){
-        console.log("inside create user");
+    if(url === "/create-user" && method === "POST"){
         const dataBody = [];
         req.on("data",(chunk)=>{
             dataBody.push(chunk);
@@ -17,15 +16,13 @@ const server = http.createServer((req, res)=>{
         })
     }
     if(url === "/"){
-        // console.log("inside home");
+        res.setHeader("content-type","text/html");
         res.write("<html>");
         res.write("<head><title>My First App</title></head>");
-        res.setHeader("content-type","text/html");
         res.write("<body><h1>Salam from my web server</h1><form action='/create-user' method='POST'><input type='text' name='username' placeholder='username'><button type='submit'>Create User</button></form></body>");
         return res.end();
     }
     if(url === "/users"){
-        console.log("inside users");
         res.setHeader("content-type","text/html");
         res.write("<html>");
         res.write("<head><title>My Users List</title></head>");

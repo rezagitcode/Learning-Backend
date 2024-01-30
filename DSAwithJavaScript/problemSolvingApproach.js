@@ -1,3 +1,12 @@
+//Problem should solved through the following approach:
+// 1. Understand the problem
+// 2. Explore concrete examples
+// 3. Break it down
+// 4. Solve or Simplify
+// 5. Look back and refactor
+
+
+
 // write a function that must take only two numbers and return the sum:
 // function sum(...args) {
 //   return args.length === 2 && typeof (args[0] + args[1]) === "number"
@@ -13,8 +22,8 @@
 // }
 // console.log(charCount("Iwant"));
 
-// write a function which takes only one string and returns an object with letters as keys
-//and number of times it occurs as values
+// write a function which takes only one string and returns an object with alphaneumeric
+// characters in lowercases as keys and number of times it occurs as values.
 
 function charCount(...args){
 if(args.length<1 || args.length>1){
@@ -25,7 +34,8 @@ if(args.length<1 || args.length>1){
   return;
 }
 let myObj = {};
-for(let char of args[0]){
+myString = args[0].toLowerCase().match(/[a-z0-9]/g).toString().replaceAll(",","");
+for(let char of myString){
   if(myObj[char]){
    myObj[char] = myObj[char] + 1;
   }else{
@@ -34,5 +44,5 @@ for(let char of args[0]){
 }
 return myObj;
 }
-const myCount = charCount("");
+const myCount = charCount(",.*9%%%Iwnatto");
 console.log(myCount);
