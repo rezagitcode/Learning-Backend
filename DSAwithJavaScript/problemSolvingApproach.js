@@ -22,7 +22,7 @@
 // }
 // console.log(charCount("Iwant"));
 
-// write a function which takes only one string and returns an object with alphaneumeric
+// write a function which takes only one string and returns an object with alphanumeric
 // characters in lowercases as keys and number of times it occurs as values.
 
 function charCount(...args){
