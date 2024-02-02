@@ -1,17 +1,17 @@
-const http = require("http");
-
 const express = require("express");
 
 const app = express();
-
-app.use((req, res, next)=>{
-    console.log("Inside the first middleware");
+app.use('/',(req, res, next)=>{
+    console.log("Inside first middleware",req.url);
     next();
 });
-app.use((req, res, next)=>{
-    console.log("Inside another middleware");
-    res.send(`<h1>Salam from express.js</ht>`);
-})
+app.use('/product',(req, res, next)=>{
+    console.log("Inside product",req.url);
+    res.send(`<h1>This is product page</h1>`);
+});
+app.use('/',(req, res, next)=>{
+    console.log("Inside another middleware",req.url);
+    res.send(`<h1>Salam from express.js</h1>`);
+});
 
-const server = http.createServer(app);
-server.listen(3000);
+app.listen(3000);
