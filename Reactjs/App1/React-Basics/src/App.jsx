@@ -1,22 +1,30 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+const myWord = ['React','Html','JavaScript','CSS','Tailwind'];
+function genRandomWord(){
+  return (Math.floor(Math.random()*4 +1))
+}
+function Header(){
+  const myWords = myWord[genRandomWord()];
+  return (<>
+  <header>
+  <div>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo" alt="Vite logo" />
+        </a>
+      </div>
+      <h1>{myWords} is Love</h1>
+      </header>
+  </>);
+}
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+    <Header/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
