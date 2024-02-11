@@ -23,3 +23,8 @@ Which code is better?
 /*
 Advise 1: Always try to find mathematical formulas to make solutions simpler
 */
+/* 
+Extra:
+difference between ++i and i++ is that ++i increments first and then asigns value whereas
+i++ asigns first then increments.
+*/
