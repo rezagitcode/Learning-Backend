@@ -9,7 +9,7 @@ html {
   line-height: 1.5;
 
   color: #ebe7ef;
-  background: radial-gradient(#280a48, #20043d);
+  background: radial-gradient(#160528, #290154);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,33 +19,7 @@ html {
   min-height: 80rem;
 }
 
-header {
-  text-align: center;
-  margin: 3rem 0;
-}
 
-header img {
-  height: 5rem;
-  width: 10rem;
-  object-fit: cover;
-}
-
-header h1 {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 5rem;
-  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-}
-
-header p {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #8964b0;
-  font-family: "Roboto Condensed", sans-serif;
-}
 
 main {
   width: 90%;
@@ -56,8 +30,8 @@ main {
 #core-concepts {
   padding: 2rem;
   border-radius: 6px;
-  background-color: #140524;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  background-color: #0c0316;
+  box-shadow: 0 2px 8px rgba(13, 13, 13, 0.4);
 }
 
 main h2 {
